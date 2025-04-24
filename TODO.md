@@ -1,0 +1,5 @@
+- [ ] Make gpt stuff works
+- [ ] Convert structure and clean stuff
+- [ ] Switch to english cuz why da hell uspeak french
+- [ ] Use IDEA to fill TODO file
+- [ ] Write README

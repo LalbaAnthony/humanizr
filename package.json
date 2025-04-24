@@ -1,0 +1,21 @@
+{
+    "name": "humanizer",
+    "version": "1.0.0",
+    "description": "Un package pour humaniser des données générées automatiquement.",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ton-utilisateur/humanizer.git"
+    },
+    "keywords": [
+        "humanize",
+        "AI",
+        "data",
+        "content"
+    ],
+    "author": "Ton Nom",
+    "license": "MIT"
+}
