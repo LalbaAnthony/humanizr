@@ -58,8 +58,6 @@ function replace(text, options = {}) {
 
     text = letters.join('')
 
-    console.log(`Replaced ${replaced} letters out of ${length} (${Math.round((replaced / length) * 100)}%)`);
-
     return text
 }
 
