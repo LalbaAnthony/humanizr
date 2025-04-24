@@ -1,4 +1,4 @@
-const humanize = require('index.js');
+const humanize = require('./index');
 
 const aiText = "Bonjour, ceci est un test pour utiliser la fonction rewrite.";
 
