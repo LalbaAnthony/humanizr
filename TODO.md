@@ -1,5 +1,7 @@
-- [ ] Make gpt stuff works
-- [ ] Convert structure and clean stuff
-- [ ] Switch to english cuz why da hell uspeak french
-- [ ] Use IDEA to fill TODO file
-- [ ] Write README
+- [ ] Setup nodemon to start playground.js
+- [ ] Retirer majuscule et points de phrases
+- [ ] 38% → Un peu plus d'un tiers
+- [ ] Tic de langague ("en fait", ...)
+- [ ] Ajouter ou retirer des synonymes
+- [ ] Write README Documentation
+- [ ] Publish on npm
