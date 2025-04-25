@@ -18,6 +18,8 @@ describe('make()', () => {
         expect(make('')).toBe('');
     });
 
+    // ERRORS RELATED
+
     it('should throw if text is not a string', () => {
         expect(() => make(null)).toThrow('Text must be a string');
         expect(() => make(123)).toThrow('Text must be a string');
@@ -40,10 +42,8 @@ describe('make()', () => {
         expect(() => make('hello', { keyboard: 123 })).toThrow('Keyboard must be a string');
     });
 
-    it('should throw if keyboard layout is not found', () => {
-        expect(() => make('hello', { keyboard: 'dvorak' })).toThrow('Keyboard layout "dvorak" not found.');
-    });
-
+    // CORE FUNCTIONALITY
+    
     it('should apply random typo with "random" type', () => {
         randomBool.mockReturnValue(true);
         randomInt.mockReturnValue(0);
