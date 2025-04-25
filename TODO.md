@@ -7,4 +7,4 @@ Features:
 
 Misc:
 - [ ] Write README Documentation
-- [ ] Publish on npm
+- [ ] Pipe to publish on npm
