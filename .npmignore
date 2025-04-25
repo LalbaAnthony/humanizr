@@ -1,9 +1,8 @@
-# Fichiers de dev
+# Dev files
 .github/
 tests/
 __tests__/
 *.test.js
 
-# Autres
+# Misc
 TODO.md
-*.log
