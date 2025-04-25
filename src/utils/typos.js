@@ -81,9 +81,8 @@ function make(text = '', options = {}) {
 
     let replaced = 0;
     const letters = text.split('');
-    const length = letters.length;
 
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < letters.length; i++) {
         for (const [type, percentage] of Object.entries(types)) {
             if (randomBool(percentage)) {
                 allTypes[type].callback(letters, i, keyboard);
@@ -91,7 +90,7 @@ function make(text = '', options = {}) {
             }
         }
 
-        if (replaced >= length) break;
+        if (replaced >= letters.length) break;
     }
 
     text = letters.join('')
@@ -99,4 +98,4 @@ function make(text = '', options = {}) {
     return text
 }
 
-module.exports = { defaultOptions, make };
+module.exports = { allTypes, defaultOptions, make };
