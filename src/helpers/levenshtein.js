@@ -6,18 +6,17 @@
  * Returns the Levenshtein distance between two strings.
  */
 function levenshtein(a, b) {
-    // Check if 
-    if (!a || typeof a !== 'string') throw new Error('The first argument must be a string');
-    if (!b || typeof b !== 'string') throw new Error('The second argument must be a string');
+    if (typeof a !== 'string') throw new Error('The first argument must be a string');
+    if (typeof b !== 'string') throw new Error('The second argument must be a string');
 
+    const aLength = a?.length || 0;
+    const bLength = b?.length || 0;
+    
+    if (!a || aLength === 0) return bLength;
+    if (!b || bLength === 0) return aLength;
+    
     a = a.toLowerCase().trim();
     b = b.toLowerCase().trim();
-
-    const aLength = a.length;
-    const bLength = b.length;
-
-    if (aLength === 0) return bLength;
-    if (bLength === 0) return aLength;
 
     if (a === b) return 0;
 

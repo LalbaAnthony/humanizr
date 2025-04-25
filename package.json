@@ -1,13 +1,13 @@
 {
     "name": "humanizrr",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "humanizrr provides methods for humanizing strings for AI-generated content.",
     "private": false,
     "main": "src/index.js",
     "scripts": {
         "start": "node src/playground.js",
         "dev": "nodemon src/playground.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest --watchAll --detectOpenHandles --forceExit"
     },
     "repository": {
         "type": "git",
@@ -27,6 +27,12 @@
     "author": "Anthony Lalba",
     "license": "MIT",
     "devDependencies": {
+        "jest": "^29.7.0",
         "nodemon": "^3.1.10"
+    },
+    "jest": {
+        "testMatch": [
+            "**/?(*.)+(spec|test).[tj]s?(x)"
+        ]
     }
 }
