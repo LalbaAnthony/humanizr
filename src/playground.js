@@ -1,11 +1,11 @@
-const humanize = require('./index');
+const humanizrr = require('./index');
 
-const text = "Il faut du courage pour affronter ses ennemis mais il en faut encore plus pour affronter ses amis";
-
-console.log("======================================================");
-console.log("humanize.typos: ");
-console.log(humanize.typos.make(text, { percentage: 0.1, types: ['random', 'swap', 'map'], keyboard: 'azerty' }));
+const text = "Live is like a box of chocolates. You never know what you're gonna get.";
 
 console.log("======================================================");
-console.log("humanize.spellings: ");
-console.log(humanize.spellings.make(text));
+console.log("humanizrr.typos: ");
+console.log(humanizrr.typos.make(text, { percentage: 0.1, types: ['random', 'swap', 'map'], keyboard: 'qwerty' }));
+
+console.log("======================================================");
+console.log("humanizrr.spellings: ");
+console.log(humanizrr.spellings.make(text));

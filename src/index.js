@@ -3,9 +3,9 @@
 const typos = require('./utils/typos');
 const spellings = require('./utils/spellings');
 
-const humanize = {
+const humanizrr = {
     typos,
     spellings,
 };
 
-module.exports = humanize;
+module.exports = humanizrr;
