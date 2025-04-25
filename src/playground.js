@@ -9,3 +9,4 @@ console.log(humanizrr.typos.make(text, { percentage: 0.1, types: ['random', 'swa
 console.log("======================================================");
 console.log("humanizrr.spellings: ");
 console.log(humanizrr.spellings.make(text));
+
