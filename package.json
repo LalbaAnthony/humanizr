@@ -7,7 +7,7 @@
     "scripts": {
         "start": "node src/playground.js",
         "dev": "nodemon src/playground.js",
-        "test": "jest --watchAll --detectOpenHandles --forceExit"
+        "test": "jest"
     },
     "repository": {
         "type": "git",
