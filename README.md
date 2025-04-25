@@ -16,6 +16,6 @@ npm install humanizrr
 const humanizrr = require('humanizrr');
 
 const text = "I am the one who knocks.";
-console.log(humanizrr.typos.make(text, { percentage: 0.01, types: ['swap', 'map'], keyboard: 'qwerty' }));
+console.log(humanizrr.typos.make(text, { keyboard: 'qwerty' }));
 // Output will be something like: "I am the one who knoks."
 ```
