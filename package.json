@@ -1,5 +1,5 @@
 {
-    "name": "humanizer",
+    "name": "humanizrr",
     "version": "1.0.0",
     "description": "A simple humanizer for AI-generated content",
     "main": "src/index.js",
@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/LalbaAnthony/humanizr.git"
+        "url": "https://github.com/LalbaAnthony/humanizrr.git"
     },
     "keywords": [
         "humanize",

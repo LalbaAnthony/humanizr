@@ -1,17 +1,17 @@
-# 🤖 - humanizr
+# 🤖 - humanizrr
 
-humanizr is a Node.js library that provides methods for humanizing strings.
+humanizrr is a Node.js library that provides methods for humanizing strings.
 
 ## 🚀 - Installation
 
 ```bash
-npm install humanizr
+npm install humanizrr
 ```
 
 ## ✒️ - Usage
 
 ```javascript
-const humanizr = require('humanizr');
+const humanizrr = require('humanizrr');
 
 // ...
 ```
