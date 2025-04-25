@@ -2,6 +2,7 @@
     "name": "humanizrr",
     "version": "1.0.0",
     "description": "humanizrr provides methods for humanizing strings for AI-generated content.",
+    "private": false,
     "main": "src/index.js",
     "scripts": {
         "start": "node src/playground.js",
