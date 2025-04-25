@@ -1,16 +1,33 @@
 // src/utils/typos.js
 
-// TODO: bind percentage on each type of typo
+// TODO: make options.types an object and bind percentage on each type
 
 const randomBool = require('../helpers/randomBool');
 const randomLetter = require('../helpers/randomLetter');
 const randomInt = require('../helpers/randomInt');
 const keyboardMaps = require('../data/keyboardMaps.json');
 
-function replace(text, options = {}) {
-    const percentage = options.percentage || 0.05; // percentage of letters to be replaced
-    const types = options.types || ['swap', 'map']; // random, swap or map
-    const keyboard = options.keyboard || 'azerty'; // keyboard layout to use
+const defaultOptions = {
+    percentage: 0.05, // percentage of letters to be replaced
+    types: ['swap', 'map'], // random, swap or map
+    keyboard: 'azerty', // keyboard layout to use
+};
+
+function make(text = '', options = {}) {
+    if (typeof text !== 'string') throw new Error('Text must be a string');
+    if (text.length === 0) return text;
+
+    const percentage = options.percentage || defaultOptions.percentage; // percentage of letters to be replaced
+    if (percentage < 0 || percentage > 1) throw new Error('Percentage must be between 0 and 1');
+
+    const types = options.types || defaultOptions.types; // random, swap or map
+    if (!Array.isArray(types)) throw new Error('Types must be an array');
+    if (types.length === 0) throw new Error('Types array must not be empty');
+
+    const keyboard = options.keyboard || defaultOptions.keyboard; // keyboard layout to use
+    if (typeof keyboard !== 'string') throw new Error('Keyboard must be a string');
+    if (keyboard.length === 0) throw new Error('Keyboard must not be empty');
+    if (!keyboardMaps[keyboard]) throw new Error(`Keyboard layout "${keyboard}" not found.`);
 
     let replaced = 0;
     const letters = text.split('');
@@ -21,7 +38,7 @@ function replace(text, options = {}) {
             replaced++;
 
             // Pick a random type of typo to apply
-            const type = types[Math.floor(Math.random() * types.length)];
+            const type = types[randomInt(0, types.length - 1)];
 
             // Replace with totally random letter
             if (type === 'random') {
@@ -61,4 +78,4 @@ function replace(text, options = {}) {
     return text
 }
 
-module.exports = { replace };
+module.exports = { defaultOptions, make };

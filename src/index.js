@@ -1,9 +1,11 @@
 // src/index.js
 
 const typos = require('./utils/typos');
+const spellings = require('./utils/spellings');
 
 const humanize = {
-    typos: typos.replace,
+    typos,
+    spellings,
 };
 
 module.exports = humanize;

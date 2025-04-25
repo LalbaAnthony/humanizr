@@ -1,8 +1,8 @@
-# humanizr
+# 🤖 - humanizr
 
 humanizr is a Node.js library that provides methods for humanizing strings.
 
-<!-- ## 🚀 - Installation
+## 🚀 - Installation
 
 ```bash
 npm install humanizr
@@ -13,9 +13,5 @@ npm install humanizr
 ```javascript
 const humanizr = require('humanizr');
 
-const { humanize, humanizeDate, humanizeNumber } = humanizr;
-
-const text = "Hello, world!";
-const humanizedText = humanize(text, { tone: 'casual', avoidRepetition: true });
-console.log(humanizedText); // Output: "Hey there, world!"
-``` -->
+// ...
+```

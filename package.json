@@ -1,14 +1,16 @@
 {
     "name": "humanizer",
     "version": "1.0.0",
-    "description": "Un package pour humaniser des données générées automatiquement.",
-    "main": "index.js",
+    "description": "A simple humanizer for AI-generated content",
+    "main": "src/index.js",
     "scripts": {
-        "test": "node test.js"
+        "start": "node src/playground.js",
+        "dev": "nodemon src/playground.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ton-utilisateur/humanizer.git"
+        "url": "https://github.com/LalbaAnthony/humanizr.git"
     },
     "keywords": [
         "humanize",
@@ -16,6 +18,9 @@
         "data",
         "content"
     ],
-    "author": "Ton Nom",
-    "license": "MIT"
+    "author": "Anthony Lalba",
+    "license": "MIT",
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
 }
