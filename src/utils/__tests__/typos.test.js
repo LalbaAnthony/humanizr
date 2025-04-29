@@ -47,8 +47,8 @@ describe('typos.js', () => {
         });
 
         test('devrait lever une erreur si le texte n\'est pas une chaîne', () => {
-            expect(() => make(null)).toThrow('Text must be a string');
-            expect(() => make({})).toThrow('Text must be a string');
+            expect(() => make(null)).toThrow('text must be a string');
+            expect(() => make({})).toThrow('text must be a string');
         });
 
         test('devrait lever une erreur si types n\'est pas un objet', () => {

@@ -58,8 +58,15 @@ const defaultOptions = {
     keyboard: 'azerty', // keyboard layout to use
 };
 
+/*
+* Function to make typos in a given text based on the specified options.
+* @param {string} text - The text to be modified.
+* @param {object} options - The options for the function.
+* @returns {string} - The modified text.
+*/
+
 function make(text = '', options = {}) {
-    if (typeof text !== 'string') throw new Error('Text must be a string');
+    if (typeof text !== 'string') throw new Error('text must be a string');
     if (text.length === 0) return text;
 
     // Types validation
